@@ -1,3 +1,10 @@
+from flask import Flask, redirect, url_for, request
+app = Flask(__name__)
+
+op = 0
+n1 = 0
+n2 = 0
+
 def add(x, y):
     return x + y
 
@@ -8,43 +15,84 @@ def multiply(x, y):
     return x * y
 
 def divide(x, y):
-    if y == 0:
-        return "Error! Division by zero."
     return x / y
 
-def main():
-    print("Select operation:")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
+@app.route('/')
+def start():
+    return """
+<html>
+   <body>      
+      <form action = "http://localhost:5000/r1" method = "post">
+<p>Type operation (1/2/3/4):</p>
+<p><input type = "number" name = "n" /></p>
+<p><input type = "Submit" value = "submit" /></p>
+      </form>      
+   </body>
+</html>
+"""
 
-    while True:
-        choice = input("Enter choice (1/2/3/4): ")
+@app.route('/num1')
+def num1():
+    return """
+<html>
+   <body>      
+      <form action = "http://localhost:5000/r2" method = "post">
+<p>Type number 1:</p>
+<p><input type = "number" name = "n" /></p>
+<p><input type = "Submit" value = "submit" /></p>
+      </form>      
+   </body>
+</html>
+"""
 
-        if choice in ['1', '2', '3', '4']:
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
+@app.route('/num2')
+def num2():
+    return """
+<html>
+   <body>      
+      <form action = "http://localhost:5000/r3" method = "post">
+<p>Type number 2:</p>
+<p><input type = "number" name = "n" /></p>
+<p><input type = "Submit" value = "submit" /></p>
+      </form>      
+   </body>
+</html>
+"""
 
-            if choice == '1':
-                print(f"{num1} + {num2} = {add(num1, num2)}")
+@app.route('/r1', methods=['POST', 'GET'])
+def r1():
+    global op
+    op = request.form['n']
+    return redirect(url_for('num1'))
 
-            elif choice == '2':
-                print(f"{num1} - {num2} = {subtract(num1, num2)}")
+@app.route('/r2', methods=['POST', 'GET'])
+def r2():
+    global n1
+    n1 = request.form['n']
+    return redirect(url_for('num2'))
 
-            elif choice == '3':
-                print(f"{num1} * {num2} = {multiply(num1, num2)}")
+@app.route('/r3', methods=['POST', 'GET'])
+def r3():
+    global n2
+    n2 = request.form['n']
+    return redirect(url_for('success'))
 
-            elif choice == '4':
-                print(f"{num1} / {num2} = {divide(num1, num2)}")
+@app.route('/success')
+def success():
+    num1 = int(n1)
+    num2 = int(n2)
+    if op == '1':
+        return f"{num1} + {num2} = {add(num1, num2)}"
 
-        else:
-            print("Invalid input")
+    elif op == '2':
+        return f"{num1} - {num2} = {subtract(num1, num2)}"
 
-        next_calculation = input("Do you want to perform another calculation? (yes/no): ")
-        if next_calculation.lower() != 'yes':
-            break
+    elif op == '3':
+        return f"{num1} * {num2} = {multiply(num1, num2)}"
+    
+    elif op == '4':
+        return f"{num1} / {num2} = {divide(num1, num2)}"
 
-if __name__ == "__main__":
-    main()
 
+if __name__ == '__main__':
+    app.run()
