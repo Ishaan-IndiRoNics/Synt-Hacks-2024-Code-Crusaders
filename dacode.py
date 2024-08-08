@@ -26,11 +26,11 @@ def divide(x, y):
 @app.route('/')
 def start():
     return """
-    
+
 #user input operator to database
-    
+
 <html>
-   <body style="backgroungcolor:blue" topmargin=50 leftmargin=100>      
+   <body bgcolor="blue" topmargin=50 leftmargin=100>      
       <form action = "http://localhost:5000/r1" method = "post">
 <p>Type operation (1/2/3/4):</p>
 <p><input type = "number" name = "n" /></p>
@@ -46,7 +46,7 @@ def num1():
     return """
 
 #user input first no. to database
-    
+
 <html>
 
    <body>      
@@ -66,7 +66,7 @@ def num2():
     return """
 
 #user input second no. to database
-    
+
 <html>
    <body>      
       <form action = "http://localhost:5000/r3" method = "post">
@@ -99,7 +99,8 @@ def r3():
     n2 = request.form['n']
     return redirect(url_for('success'))
 
-#output
+
+# output
 
 @app.route('/success')
 def success():
