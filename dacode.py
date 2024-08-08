@@ -35,7 +35,8 @@ def start():
 <p>Type operation (1/2/3/4):</p>
 <p><input type = "number" name = "n" /></p>
 <p><input type = "Submit" value = "submit" /></p>
-      </form>      
+      </form>   
+      <hr>
    </body>
 </html>
 """
@@ -54,7 +55,8 @@ def num1():
 <p>Type number 1:</p>
 <p><input type = "number" name = "n" /></p>
 <p><input type = "Submit" value = "submit" /></p>
-      </form>      
+      </form>   
+      <hr>
    </body>
 
 </html>
@@ -73,7 +75,8 @@ def num2():
 <p>Type number 2:</p>
 <p><input type = "number" name = "n" /></p>
 <p><input type = "Submit" value = "submit" /></p>
-      </form>      
+      </form>   
+      <hr>
    </body>
 </html>
 """
