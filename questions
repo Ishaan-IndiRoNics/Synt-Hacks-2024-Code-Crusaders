@@ -7,3 +7,6 @@ Sec-Science
 a.	The openings in our noses are what Ans = Nostrils(difficulty-easy) part 2
 b.	How many teeth do adults have Ans = 32(difficulty-medium) part 2
 c.	If we were to fall and get hurt what part of blood will help it get better Ans = Platelets(difficulty-hard) part 2
+Ahan, I need 10 more questions of Maths. 2 of each level.
+Give in format -> ["question", "answer in lowercase", 0, difficulty]
+difficulty as a number from 0 to 4 ends inclusive.
