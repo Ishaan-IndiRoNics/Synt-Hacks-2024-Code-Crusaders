@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>EduBot</title>
+</head>
+
+<body bgcolor="#8cd1cc" topmargin=50 leftmargin=100>
+<form action = "http://localhost:5000/assesscheck" method = "post">
+	<div>
+
+		<font color="#8360bf">
+
+			<h1><ins><b>EduBot</b></ins></h1>
+
+		</font>
+	
+		<font color="#8360bf">
+
+			<p>	EduBot is an <i>easy-to-access child-friendly</i> web service. Our aim at EduBot is to help young children to asses there strengths and weaknesses, so that they can work on them and <i>excel in academics</i>.</p>
+
+			<p>	Children can answer our assesment questions and review our analysis. There are three difficulty levels: easy, medium, and hard. Based on the results of the assesment and difficulty level of the questions, we generate feedback.</p>
+
+			<p>	We built EduBot as a tool for students, and we hope that it is fruitful in development of many students.</p>
+
+		</font>
+
+	</div>
+
+	<br>
+	<hr>
+	<br>
+
+	<div>
+
+	<font color="#8360bf">
+                
+		<p>{{question}}  Difficulty - {{d}}</p>
+
+                <p><input type = "text" name = "ans" /></p>
+
+		<input color="#19e67c" type = "submit" value = "Submit"></input>
+	</font>
+
+	</div>
+
+	<br>
+	<hr>
+	<br>
+
+</form> 
+</body>
+
+</html>
