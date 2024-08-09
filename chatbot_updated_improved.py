@@ -9,7 +9,7 @@ if subject.upper() == "MATH" or subject.upper() == "MATHS" or subject.upper() ==
     if question.lower() == "a":
         print('For question a. let the number be x and then rearrange the equation as x*6=66 so 6x=66 so x=66/6 x=11')
     elif question.lower() == "b":
-        print('x+28/4=50 so x+28=50*4 then 50*4 =200 then =200-28 = 178')
+        print('x+28/4=50 so (x+28)=50*4 then 50*4 =200 then =200-28 = 178')
     elif question.lower() == "c":
         print('In this question, we use prime factorization to attain 52 as root of 2704, since root of 2704 = root of 2*2*2*2*13*13 = 2*2*13 =52.')
     else:
