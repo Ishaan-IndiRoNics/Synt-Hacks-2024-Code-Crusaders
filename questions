@@ -1,6 +1,6 @@
 Sec-Math’s-1
 a. x multipled by 6 gives =66	 Ans = 11(difficulty-easy)	part 1
-b. evaluate the following  x+28/4=50 Ans=172(difficulty-medium)     part 1
+b. evaluate the following  (x+28)/4=50 Ans=172(difficulty-medium)     part 1
 c. Find out if 2704 is a square number Ans=52(difficulty-hard).   Part 1
 
 Sec-Science
@@ -11,3 +11,25 @@ Ahan, I need 10 more questions of Maths. 2 of each level.
 Give in format -> ["question", "answer in lowercase", 0, difficulty]
 difficulty as a number from 0 to 4 ends inclusive.
 Also give 5 similarly (one of each level) for science.
+
+
+
+Maths-
+1. 35x=70  --> ans = 2 --> 0 --> difficulty --> easy
+2. 34x=102 --> ans = 3 --> 0 --> difficulty -->easy
+3. 107*7   --> ans=749 --> 0 --> difficulty -->medium
+4. 142*9   --> ans=1278 --> 0 --> difficulty --> medium
+5. (x+4-18)/6 =6 --> ans=50 --> 0 --> difficulty --> medium hard
+6. (x+9-24)/8 =2 --> ans=31 --> 0 --> difficulty --> medium hard
+7. Max works in the kitchen of a Chinese restaurant.
+ On Sunday, he washed a total of 600 large and small plates.
+ If Max washed 145 large plates, how many small dishes did he wash on Sunday? --> ans = 455 --> 0 --> difficulty --> hard
+8. The bakery currently mixes and bakes 354 cheesecakes.
+  Another 780 cheesecakes are ready.
+  How many cheesecakes are there? --> ans = 1134 -->0 --> difficulty hard
+9. There were 700 bags of flour in the bakery.
+  Then an employee made baguettes from 495 sacks of flour.
+  How much flour is left? = ans=205 -->0 -->difficulty --> very hard
+10. After the vacation, the office manager has to read 890 emails.
+    She has read 617 of them so far.
+    How many emails are left for the office manager to read? -->ans=273-->0-->difficulty-->very hard
