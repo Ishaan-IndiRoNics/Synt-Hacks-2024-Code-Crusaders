@@ -32,7 +32,7 @@ else:
 
 calculator = input("Do you want to use my bonus calculator feature?(yes/no) ")
 
-if calculator.lower == "yes":
+if calculator.lower() == "yes":
   operator = input("Do you want to (A)dd, (S)ubtract, (M)ultiply, or (D)ivide? ")
 
   if operator.upper() == "A":
@@ -103,7 +103,7 @@ if calculator.lower == "yes":
     print("!error!")
     print("Kindly rerun and follow instructions.")
 
-elif calculator.lower == "no":
+elif calculator.lower() == "no":
   print("Hope I was helpful!")
 
 else:
