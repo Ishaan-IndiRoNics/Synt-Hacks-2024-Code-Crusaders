@@ -6,12 +6,12 @@
 </head>
 
 <body bgcolor="#8cd1cc" topmargin=50 leftmargin=100>
-<form action = "http://localhost:5000/check" method = "post">
+<form action = "http://localhost:5000/home">
 	<div>
 		
 		<font color="#8360bf">
 
-			<h1><ins><b>CONGRATULATIONS!</b></ins></h1>
+			<h1><ins><b>CONGRATULATIONS {{name}}!!</b></ins></h1>
 
 		</font>
 
@@ -21,7 +21,7 @@
 
 	<font color="#fc0303">
                 
-		<p>Nice! You got <ins>{{s0}} out of 3 in Maths</ins> and <ins>{{s0}} out of 3 in Science</ins>.</p>
+		<p>Maths - {{s0}}     			 Science - {{s1}}</p>
 
 		<input color="#19e67c" type = "submit" value = "Ok"></input>
 	</font>
